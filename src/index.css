@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body, button, input, select, textarea {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+/* Card Typography Styling - Clean Regular / Medium Weights with Poppins */
+.card-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.card-price {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.card-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.card-subtext {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.card-action {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #doorbly-tax-invoice, #doorbly-tax-invoice * {
+    visibility: visible;
+  }
+  #doorbly-tax-invoice {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: none !important;
+    border: none !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
+
+
+
